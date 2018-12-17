@@ -2,13 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Newsapibootsrap</title>
-  <base href="/">
+  <title>World HeadLine Hunter</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get the latest live news headline around the globe from a range of sources   Just for the record, this website was developed by Emanuel abiyo.">
+  <meta name="keywords" content="emnanuel-abiyo, websky-dk, emanuel abiandroa abiyo, world headlines,headlines,news,headlines,news api, api, news headlines">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <!-- Fonts -->
+  <!-- Favicons -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <base href="/">
 </head>
-<body>
+<body  data-spy="scroll" data-target="#sidebar" data-offset="200">
   <app-root></app-root>
 </body>
+<script type="text/javascript">
+    (function(){
+       var burger= document.querySelector('.burger') ;
+       var nav =document.querySelector('#'+burger.dataset.target);
+
+       burger.addEventListener('click',function () {
+
+           burger.classList.toggle('is-active');
+           nav.classList.toggle('is-active');
+
+       })
+
+    })();
+
+</script>
 </html>
